@@ -1,0 +1,154 @@
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --card-width: 450px;
+    --card-height: 700px;
+    --card-border-radius: 15px;
+    --page-font:'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: var(--pale-blue);
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-summary-card{
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: white;
+    border-radius: var(--card-border-radius);
+    font-family: var(--page-font);
+    margin-top: 100px;
+
+}
+
+.person-dancing-img{
+    background-image: url('./images/illustration-hero.svg');
+    width: var(--card-width);
+    height: 220px;
+    margin: 0;
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+}
+
+.page-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 480px;
+}
+
+.main-title{
+    font-weight: 800;
+    color: var(--dark-blue);
+    font-size: 28px;
+    margin: 0;
+}
+
+.description{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    width: 80%;
+    margin: 0;
+    text-align: center;
+}
+
+
+.type-plan-section{
+    display: flex;
+    background-color: var(--very-pale-blue);
+    align-items: center;
+    justify-content: space-between;
+    width: 71%;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.music-note-plan-price-section{
+    display: flex;
+    align-items: center;
+}
+
+.music-note-icon{
+    background-image: url('./images/icon-music.svg');
+    width: 48px;
+    height: 48px;
+    margin: 0px;
+}
+
+.annual-plan-section{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.annual-plan-text{
+    margin: 0;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.price{
+    margin: 0;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+.change-btn{
+    background-color: transparent;
+    border: 0;
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-family: var(--page-font);
+}
+
+.change-btn:hover{
+    color: hsla(245, 75%, 52%,60%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.payment-btn{
+    background-color: var(--bright-blue);
+    color: white;
+    font-family: var(--page-font);
+    font-weight: 700;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    border-width: 0px;
+    box-shadow: 0px 10px 15px 7px hsla(245, 75%, 52%,.2);
+}
+
+.payment-btn:hover{
+    background-color: hsla(245, 75%, 52%,60%);
+    cursor: pointer;
+}
+
+.cancel-btn{
+    background-color: transparent;
+    border: 0;
+    font-family: var(--page-font);
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
+
+.cancel-btn:hover{
+    cursor: pointer;
+    color: var(--dark-blue);
+}
